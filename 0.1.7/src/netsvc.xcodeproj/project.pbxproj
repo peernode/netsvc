@@ -1,0 +1,371 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7984322119920B3800D02886 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 798431F619920AF200D02886 /* Foundation.framework */; };
+		798433E61994BEAC00D02886 /* epoll_handler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 798433E01994BEAC00D02886 /* epoll_handler.cpp */; };
+		798433E71994BEAC00D02886 /* epoll_worker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 798433E11994BEAC00D02886 /* epoll_worker.cpp */; };
+		798433E81994BEAC00D02886 /* netsvc_rdwrq.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 798433E21994BEAC00D02886 /* netsvc_rdwrq.cpp */; };
+		798433E91994BEAC00D02886 /* netsvc_util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 798433E31994BEAC00D02886 /* netsvc_util.cpp */; };
+		798433EA1994BEAC00D02886 /* udp_handler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 798433E41994BEAC00D02886 /* udp_handler.cpp */; };
+		798433EB1994BEAC00D02886 /* udp_receiver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 798433E51994BEAC00D02886 /* udp_receiver.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7984321E19920B3800D02886 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		798431F619920AF200D02886 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7984320419920AF200D02886 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		7984320719920AF200D02886 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		7984322019920B3800D02886 /* libnetsvc_mt_ipad.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libnetsvc_mt_ipad.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		798433C31994BEAC00D02886 /* epoll_accepter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = epoll_accepter.h; sourceTree = "<group>"; };
+		798433C41994BEAC00D02886 /* epoll_connector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = epoll_connector.h; sourceTree = "<group>"; };
+		798433C51994BEAC00D02886 /* epoll_handler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = epoll_handler.h; sourceTree = "<group>"; };
+		798433C61994BEAC00D02886 /* epoll_worker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = epoll_worker.h; sourceTree = "<group>"; };
+		798433C71994BEAC00D02886 /* netsvc_init.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = netsvc_init.h; sourceTree = "<group>"; };
+		798433C81994BEAC00D02886 /* netsvc_rdwrq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = netsvc_rdwrq.h; sourceTree = "<group>"; };
+		798433C91994BEAC00D02886 /* netsvc_type.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = netsvc_type.h; sourceTree = "<group>"; };
+		798433CA1994BEAC00D02886 /* netsvc_util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = netsvc_util.h; sourceTree = "<group>"; };
+		798433CB1994BEAC00D02886 /* udp_handler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = udp_handler.h; sourceTree = "<group>"; };
+		798433CC1994BEAC00D02886 /* udp_receiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = udp_receiver.h; sourceTree = "<group>"; };
+		798433CD1994BEAC00D02886 /* udp_service.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = udp_service.h; sourceTree = "<group>"; };
+		798433CE1994BEAC00D02886 /* udp_worker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = udp_worker.h; sourceTree = "<group>"; };
+		798433CF1994BEAC00D02886 /* netsvc_init.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = netsvc_init.h; sourceTree = "<group>"; };
+		798433D01994BEAC00D02886 /* tcp_service.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tcp_service.h; sourceTree = "<group>"; };
+		798433D11994BEAC00D02886 /* udp_service.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = udp_service.h; sourceTree = "<group>"; };
+		798433D31994BEAC00D02886 /* iocp_accepter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iocp_accepter.h; sourceTree = "<group>"; };
+		798433D41994BEAC00D02886 /* iocp_connector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iocp_connector.h; sourceTree = "<group>"; };
+		798433D51994BEAC00D02886 /* iocp_handler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iocp_handler.h; sourceTree = "<group>"; };
+		798433D61994BEAC00D02886 /* iocp_worker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iocp_worker.h; sourceTree = "<group>"; };
+		798433D71994BEAC00D02886 /* netsvc_init.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = netsvc_init.h; sourceTree = "<group>"; };
+		798433D81994BEAC00D02886 /* netsvc_rdwrq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = netsvc_rdwrq.h; sourceTree = "<group>"; };
+		798433D91994BEAC00D02886 /* netsvc_type.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = netsvc_type.h; sourceTree = "<group>"; };
+		798433DA1994BEAC00D02886 /* netsvc_util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = netsvc_util.h; sourceTree = "<group>"; };
+		798433DB1994BEAC00D02886 /* udp_handler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = udp_handler.h; sourceTree = "<group>"; };
+		798433DC1994BEAC00D02886 /* udp_receiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = udp_receiver.h; sourceTree = "<group>"; };
+		798433DD1994BEAC00D02886 /* udp_service.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = udp_service.h; sourceTree = "<group>"; };
+		798433DE1994BEAC00D02886 /* udp_worker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = udp_worker.h; sourceTree = "<group>"; };
+		798433E01994BEAC00D02886 /* epoll_handler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = epoll_handler.cpp; sourceTree = "<group>"; };
+		798433E11994BEAC00D02886 /* epoll_worker.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = epoll_worker.cpp; sourceTree = "<group>"; };
+		798433E21994BEAC00D02886 /* netsvc_rdwrq.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = netsvc_rdwrq.cpp; sourceTree = "<group>"; };
+		798433E31994BEAC00D02886 /* netsvc_util.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = netsvc_util.cpp; sourceTree = "<group>"; };
+		798433E41994BEAC00D02886 /* udp_handler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = udp_handler.cpp; sourceTree = "<group>"; };
+		798433E51994BEAC00D02886 /* udp_receiver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = udp_receiver.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7984321D19920B3800D02886 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7984322119920B3800D02886 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		798431EA19920AF200D02886 = {
+			isa = PBXGroup;
+			children = (
+				798433C11994BEAC00D02886 /* include */,
+				798433DF1994BEAC00D02886 /* linux */,
+				798431F519920AF200D02886 /* Frameworks */,
+				798431F419920AF200D02886 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		798431F419920AF200D02886 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7984322019920B3800D02886 /* libnetsvc_mt_ipad.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		798431F519920AF200D02886 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				798431F619920AF200D02886 /* Foundation.framework */,
+				7984320419920AF200D02886 /* XCTest.framework */,
+				7984320719920AF200D02886 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		798433C11994BEAC00D02886 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				798433C21994BEAC00D02886 /* linux */,
+				798433CF1994BEAC00D02886 /* netsvc_init.h */,
+				798433D01994BEAC00D02886 /* tcp_service.h */,
+				798433D11994BEAC00D02886 /* udp_service.h */,
+				798433D21994BEAC00D02886 /* win */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		798433C21994BEAC00D02886 /* linux */ = {
+			isa = PBXGroup;
+			children = (
+				798433C31994BEAC00D02886 /* epoll_accepter.h */,
+				798433C41994BEAC00D02886 /* epoll_connector.h */,
+				798433C51994BEAC00D02886 /* epoll_handler.h */,
+				798433C61994BEAC00D02886 /* epoll_worker.h */,
+				798433C71994BEAC00D02886 /* netsvc_init.h */,
+				798433C81994BEAC00D02886 /* netsvc_rdwrq.h */,
+				798433C91994BEAC00D02886 /* netsvc_type.h */,
+				798433CA1994BEAC00D02886 /* netsvc_util.h */,
+				798433CB1994BEAC00D02886 /* udp_handler.h */,
+				798433CC1994BEAC00D02886 /* udp_receiver.h */,
+				798433CD1994BEAC00D02886 /* udp_service.h */,
+				798433CE1994BEAC00D02886 /* udp_worker.h */,
+			);
+			path = linux;
+			sourceTree = "<group>";
+		};
+		798433D21994BEAC00D02886 /* win */ = {
+			isa = PBXGroup;
+			children = (
+				798433D31994BEAC00D02886 /* iocp_accepter.h */,
+				798433D41994BEAC00D02886 /* iocp_connector.h */,
+				798433D51994BEAC00D02886 /* iocp_handler.h */,
+				798433D61994BEAC00D02886 /* iocp_worker.h */,
+				798433D71994BEAC00D02886 /* netsvc_init.h */,
+				798433D81994BEAC00D02886 /* netsvc_rdwrq.h */,
+				798433D91994BEAC00D02886 /* netsvc_type.h */,
+				798433DA1994BEAC00D02886 /* netsvc_util.h */,
+				798433DB1994BEAC00D02886 /* udp_handler.h */,
+				798433DC1994BEAC00D02886 /* udp_receiver.h */,
+				798433DD1994BEAC00D02886 /* udp_service.h */,
+				798433DE1994BEAC00D02886 /* udp_worker.h */,
+			);
+			path = win;
+			sourceTree = "<group>";
+		};
+		798433DF1994BEAC00D02886 /* linux */ = {
+			isa = PBXGroup;
+			children = (
+				798433E01994BEAC00D02886 /* epoll_handler.cpp */,
+				798433E11994BEAC00D02886 /* epoll_worker.cpp */,
+				798433E21994BEAC00D02886 /* netsvc_rdwrq.cpp */,
+				798433E31994BEAC00D02886 /* netsvc_util.cpp */,
+				798433E41994BEAC00D02886 /* udp_handler.cpp */,
+				798433E51994BEAC00D02886 /* udp_receiver.cpp */,
+			);
+			path = linux;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7984321F19920B3800D02886 /* netsvc_mt_ipad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7984323C19920B3800D02886 /* Build configuration list for PBXNativeTarget "netsvc_mt_ipad" */;
+			buildPhases = (
+				7984321C19920B3800D02886 /* Sources */,
+				7984321D19920B3800D02886 /* Frameworks */,
+				7984321E19920B3800D02886 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = netsvc_mt_ipad;
+			productName = netsvc_mt_ipad;
+			productReference = 7984322019920B3800D02886 /* libnetsvc_mt_ipad.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		798431EB19920AF200D02886 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Funshion;
+			};
+			buildConfigurationList = 798431EE19920AF200D02886 /* Build configuration list for PBXProject "netsvc" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 798431EA19920AF200D02886;
+			productRefGroup = 798431F419920AF200D02886 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7984321F19920B3800D02886 /* netsvc_mt_ipad */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7984321C19920B3800D02886 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				798433EB1994BEAC00D02886 /* udp_receiver.cpp in Sources */,
+				798433E91994BEAC00D02886 /* netsvc_util.cpp in Sources */,
+				798433E81994BEAC00D02886 /* netsvc_rdwrq.cpp in Sources */,
+				798433EA1994BEAC00D02886 /* udp_handler.cpp in Sources */,
+				798433E71994BEAC00D02886 /* epoll_worker.cpp in Sources */,
+				798433E61994BEAC00D02886 /* epoll_handler.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7984321419920AF200D02886 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7984321519920AF200D02886 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7984323D19920B3800D02886 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libstdc++";
+				DSTROOT = /tmp/netsvc_mt_ipad.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/include",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		7984323E19920B3800D02886 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libstdc++";
+				DSTROOT = /tmp/netsvc_mt_ipad.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/include",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		798431EE19920AF200D02886 /* Build configuration list for PBXProject "netsvc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7984321419920AF200D02886 /* Debug */,
+				7984321519920AF200D02886 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7984323C19920B3800D02886 /* Build configuration list for PBXNativeTarget "netsvc_mt_ipad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7984323D19920B3800D02886 /* Debug */,
+				7984323E19920B3800D02886 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 798431EB19920AF200D02886 /* Project object */;
+}
